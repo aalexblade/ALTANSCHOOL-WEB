@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aalexblade/ALTANSCHOOL-WEB-COURSES.git"
+    "url": "git+https://github.com/aalexblade/ALTANSCHOOL-WEB.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aalexblade/ALTANSCHOOL-WEB-COURSES/issues"
+    "url": "https://github.com/aalexblade/ALTANSCHOOL-WEB/issues"
   },
-  "homepage": "https://github.com/aalexblade/ALTANSCHOOL-WEB-COURSES#readme",
+  "homepage": "https://github.com/aalexblade/ALTANSCHOOL-WEB",
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "react": "^19.1.0",
