@@ -1,5 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+import imgSm from '/src/assets/images/organicFashion/ORGANIC_375.jpg';
+import imgMd from '/src/assets/images/organicFashion/ORGANIC_992.jpg';
+import imgLg from '/src/assets/images/organicFashion/ORGANIC_1366.jpg';
+import imgXl from '/src/assets/images/organicFashion/ORGANIC_1920.jpg';
+
 const initialState = {
   title: 'ORGANIC FASHION',
   text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -7,20 +12,17 @@ const initialState = {
   when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
   buttonText: 'SHOP NOW',
   images: {
-    sm: '/src/assets/images/organicFashion/ORGANIC_375.jpg',
-    md: '/src/assets/images/organicFashion/ORGANIC_992.jpg',
-    lg: '/src/assets/images/organicFashion/ORGANIC_1366.jpg',
-    xl: '/src/assets/images/organicFashion/ORGANIC_1920.jpg',
+    sm: imgSm,
+    md: imgMd,
+    lg: imgLg,
+    xl: imgXl,
   },
-  
 };
 
 const organicFashionSlice = createSlice({
   name: 'organicFashion',
   initialState,
-  reducers: {}
+  reducers: {},
 });
 
 export default organicFashionSlice.reducer;
-
-

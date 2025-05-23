@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setName, setEmail, setMessage, resetForm } from '../../redux/followUsSlice';
+import followUsImg from '/src/assets/images/followUs/followUs.jpg';
 
 function FollowUs() {
   const dispatch = useDispatch();
@@ -18,9 +19,7 @@ function FollowUs() {
       className="bg-[#f1f1f1] flex flex-col sm:items-center sm:px-[59px] md:flex-row md:px-[91px] md:justify-between lg:px-[170px] xl:px-[274px] xl:justify-between"
       style={{ fontFamily: 'var(--font-family)' }}
     >
-      
       <div className="flex flex-col mb-10 md:mb-0">
-       
         <h2
           className="
             font-bold text-black
@@ -34,7 +33,6 @@ function FollowUs() {
           FOLLOW US
         </h2>
 
-   
         <form
           onSubmit={handleSubmit}
           className="
@@ -45,7 +43,6 @@ function FollowUs() {
             xl:items-start
           "
         >
-      
           <input
             type="text"
             placeholder="Enter your name"
@@ -64,7 +61,6 @@ function FollowUs() {
             "
           />
 
-       
           <input
             type="email"
             placeholder="Enter a valid email address"
@@ -84,7 +80,6 @@ function FollowUs() {
             "
           />
 
-        
           <textarea
             placeholder="Enter your message"
             value={message}
@@ -103,7 +98,6 @@ function FollowUs() {
             "
           />
 
-       
           <button
             type="submit"
             className="
@@ -123,7 +117,6 @@ function FollowUs() {
         </form>
       </div>
 
-     
       <div
         className="
           sm:w-[243px] sm:h-[345px]
@@ -131,8 +124,8 @@ function FollowUs() {
           lg:w-[439px] lg:h-[624px]
           xl:w-[302px] xl:h-[429px]
           bg-cover bg-center rounded-md
-          "
-        style={{ backgroundImage: "url('/src/assets/images/followUs/followUs.jpg')" }}
+        "
+        style={{ backgroundImage: `url(${followUsImg})` }}
       />
     </section>
   );
