@@ -11,6 +11,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -23,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/aalexblade/ALTANSCHOOL-WEB/issues"
   },
-  "homepage": "https://github.com/aalexblade/ALTANSCHOOL-WEB",
+  "homepage": "https://aalexblade.github.io/ALTANSCHOOL-WEB",
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "react": "^19.1.0",
@@ -32,7 +33,6 @@
     "react-redux": "^9.2.0"
   },
   "devDependencies": {
-   
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
     "@vitejs/plugin-react": "^4.4.1",
