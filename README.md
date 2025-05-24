@@ -1,100 +1,80 @@
 ALTANSCHOOL WEB
-Адаптивний сайт для онлайн-платформи навчання, створений у межах тестового завдання. Використано React, Redux Toolkit, Tailwind CSS і Vite.
+Responsive website for an online education platform. Built as part of a test assignment. The project uses React, Redux Toolkit, Tailwind CSS, and Vite.
 
-🔍 Опис проєкту
-Це односторінковий адаптивний сайт з кількома секціями (Header, Follow Us, Organic Fashion, New Collection тощо). Увесь контент (тексти, зображення) змінюється відповідно до ширини екрана (375, 992, 1366, 1920 пікселів). Дані зберігаються в централізованому Redux-стані.
+🔍 Project Description
+This is a responsive, multi-section landing page (e.g., Header, Follow Us, Organic Fashion, New Collection). All content, including text and images, dynamically adapts based on screen width (375, 992, 1366, 1920px). Content and form data are managed centrally using Redux.
 
-⚙️ Використані технології
+⚙️ Technologies Used
 ✅ React
-Сучасна бібліотека для побудови компонентного інтерфейсу. Кожна секція сайту реалізована як окремий компонент.
+Used for building a component-based interface. Each section is encapsulated as a reusable component for maintainability and scalability.
 
 ✅ Redux Toolkit
-Використовується для зберігання контенту (тексти, зображення, поля форм). Завдяки Redux централізовано керується стан проєкту, що дозволяє легко змінювати вміст без необхідності змінювати компоненти напряму.
-
-Чому Redux?
-
-Просте управління глобальним станом.
-
-Зручно зберігати контент, який змінюється залежно від ширини екрана.
-
-Легко масштабувати та підтримувати.
+Chosen to manage centralized state. Redux stores both dynamic content (titles, paragraphs, images) and form input data. This approach ensures predictable state handling and simplifies communication between components.
 
 ✅ Tailwind CSS
-Сучасна утилітарна CSS-бібліотека. Використовується для швидкої верстки та адаптивного дизайну.
-
-Підключено кастомні брейкпоінти: 375, 992, 1366, 1920.
-
-Налаштовані кольори ховера/фокусу (#8E9A82) та фон (#faf9f8).
-
-Шрифт — Crimson Text, sans-serif.
+Used for styling and responsive design. Utility-first classes make it fast to build and adjust layouts across screen sizes. Custom breakpoints and hover/focus colors are implemented based on project design requirements.
 
 ✅ Vite
-Інструмент для швидкої розробки та збірки проєктів на базі ES-модулів.
+Vite is used for development and production builds, providing lightning-fast performance with minimal config and native ES module support.
 
-Швидкий старт (npm run dev).
-
-Збірка для продакшену (npm run build).
-
-Просте розгортання на GitHub Pages.
-
-🗂 Структура проєкту
-csharp
+🗂 Project Structure
+php
 Копіювати
 Редагувати
 ALTANSCHOOL-WEB/
-├── public/               # Статичні ресурси
+├── public/               # Static assets
 ├── src/
-│   ├── assets/           # Зображення, іконки
-│   ├── components/       # React-компоненти секцій
-│   ├── redux/            # Redux store та слайси
-│   ├── App.jsx           # Головний компонент
-│   └── main.jsx          # Точка входу
+│   ├── assets/           # Images and icons
+│   ├── components/       # React section components
+│   ├── redux/            # Redux store and slices
+│   ├── App.jsx           # Root component
+│   └── main.jsx          # Entry point
 ├── index.html
 ├── tailwind.config.js
 ├── vite.config.js
 └── package.json
-✏️ Як редагувати контент (через Redux)
-Увесь контент сайту зберігається в Redux (див. src/redux/contentSlice.js). Щоб змінити текст, зображення чи будь-який інший вміст:
+✏️ How to Edit Content (via Redux)
+All content — including section texts, form labels, and responsive images — is stored in the Redux store (see src/redux/contentSlice.js). To change any content:
 
-Відкрий contentSlice.js.
+Open the file contentSlice.js.
 
-Знайди потрібну секцію.
+Edit the relevant text or image path under the appropriate screen size key (375, 992, 1366, 1920).
 
-Відредагуй текст або шлях до зображення (для відповідного брейкпоінта).
+Save and restart the dev server (if needed).
 
-Збережи — зміни автоматично застосуються в інтерфейсі.
+This structure enables you to manage all visible UI content from a single file, improving scalability and localization flexibility.
 
-🚀 Як запустити
-🔧 Встановлення
+🚀 Getting Started
+🔧 Installation
 bash
 Копіювати
 Редагувати
 git clone https://github.com/aalexblade/ALTANSCHOOL-WEB.git
 cd ALTANSCHOOL-WEB
 npm install
-▶️ Запуск для розробки
+▶️ Start Development Server
 bash
 Копіювати
 Редагувати
 npm run dev
-🧱 Збірка для продакшену
+🧱 Build for Production
 bash
 Копіювати
 Редагувати
 npm run build
-🌐 Перегляд продакшен-версії локально
+🌐 Preview Production Build Locally
 bash
 Копіювати
 Редагувати
 npm run preview
-🚀 Розгортання на GitHub Pages
+🚀 Deploy to GitHub Pages
 bash
 Копіювати
 Редагувати
 npm run deploy
-Папка dist автоматично буде відправлена в гілку gh-pages.
+The dist folder will be pushed to the gh-pages branch automatically.
 
-🔗 Живе демо
-👉 Перейти на сайт https://aalexblade.github.io/ALTANSCHOOL-WEB/
+🔗 Live Demo
+👉 View the site https://aalexblade.github.io/ALTANSCHOOL-WEB/
 
 
